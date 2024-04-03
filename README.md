@@ -1,7 +1,7 @@
 # WebDevProject
------
+web shop similar to websites like wildberries and olx.
 # Project_title
-
+e-commerce website
 ## Members
 
 ```
