@@ -1,7 +1,7 @@
 # WebDevProject
-web shop similar to websites like wildberries and olx.
+mobile application that is similar to instagram.
 # Project_title
-e-commerce website
+mobile app
 ## Members
 
 ```
