@@ -1,7 +1,7 @@
 # WebDevProject
 mobile application that is similar to instagram.
 # Project_title
-mobile app
+Connectopia
 ## Members
 
 ```
