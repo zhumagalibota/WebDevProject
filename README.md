@@ -1,5 +1,5 @@
 # WebDevProject
-mobile application that is similar to instagram.
+Social media, where you can find your people and soulmates, subscribe and see posts and profile of your friends. Join us to get into the Connectopia:)
 # Project_title
 Connectopia
 ## Members
