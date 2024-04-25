@@ -1,0 +1,17 @@
+<div class="parent">
+  <div class="container">
+    <h1 class="company-name">Connectopia</h1>
+    <h2>Login to Your Account</h2>
+    <form action="#" method="post">
+      <input type="text" [(ngModel)]="loginObj.EmailId" name="email" placeholder="email" required>
+      <input type="password" [(ngModel)]="loginObj.Password" name="password" placeholder="Password" required>
+      <button type="button" (click)="onLogin()">Login</button>
+    </form>
+    <div class="extra-links">
+      <a href="#" routerLink="/signup" routerLinkActive="activelink" ariaCurrentWhenActive="page">Sign Up</a>
+      <span> | </span>
+      <a href="#" routerLink="/forgot-password" routerLinkActive="activelink" ariaCurrentWhenActive="page">Forgot Password?</a>
+    </div>
+  </div>
+</div>
+

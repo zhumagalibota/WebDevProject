@@ -1,0 +1,44 @@
+.import-nickname-background {
+  background-color: #f8f9fa; /* Grey background */
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.import-nickname-container {
+  max-width: 400px;
+  padding: 20px;
+  background-color: #fff; /* White container background */
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Shadow effect */
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+}
+
+.input-control {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.save-btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.save-btn:hover {
+  background-color: #0056b3;
+}
+

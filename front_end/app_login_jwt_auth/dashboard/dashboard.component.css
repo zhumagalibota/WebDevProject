@@ -1,0 +1,139 @@
+/* Navbar */
+.top {
+  background-color: #333;
+  overflow: hidden;
+}
+
+.top a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+
+.top button {
+  float: right;
+  padding: 14px 16px;
+  background-color: #333;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+/* Page Container */
+.page-container {
+  display: flex;
+  justify-content: center;
+  margin-left: 10px;
+}
+
+/* Grid */
+.grid {
+  display: grid;
+  grid-template-columns: 26% 50% 26%; /* Updated column widths */
+  grid-gap: 10px;
+}
+
+/* Left Column, Middle Column, Friend Request */
+.left-column, .middle-column, .friend-request {
+  margin-top: 20px;
+}
+
+
+/* Left Column */
+.left-column {
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+/* Profile */
+.profile-photo {
+  text-align: center;
+}
+
+/* Interests */
+.interests {
+  margin-top: 20px;
+}
+
+.interest {
+  display: inline-block;
+  padding: 5px 10px;
+  background-color: lightblue; /* Added light blue background */
+  margin-right: 5px;
+  margin-bottom: 5px;
+}
+
+/* Middle Column */
+.middle-column {
+  background-color: #f9f9f9;
+  padding: 20px;
+}
+
+/* Post */
+.post-description {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Other User Post */
+.other-user-post {
+  background-color: #fff;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Friend Request */
+.friend-request {
+  background-color: #f1f1f1;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Post1 */
+.post1 {
+  background-color: #fff;
+  border: 1px solid #ccc; /* Add border */
+  border-radius: 5px; /* Add border radius for rounded corners */
+  padding: 20px; /* Add padding */
+  margin-bottom: 20px; /* Add margin bottom to create space between posts */
+}
+
+/* Post Description */
+.post-description {
+  font-weight: bold;
+  margin-bottom: 10px;
+  background-color: #f2f2f2; /* Change background color */
+  border: 1px solid #ccc; /* Add border */
+  padding: 10px; /* Add padding */
+  border-radius: 5px; /* Add border radius for rounded corners */
+}
+
+
+.other-user-post-img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px; /* Add some space between the image and the name */
+}
+
+.opacity {
+  display: flex;
+}
+
+.half {
+  flex: 1;
+}
+
+/* Footer */
+.footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+}
+

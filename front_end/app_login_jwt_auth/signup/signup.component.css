@@ -1,0 +1,79 @@
+.parent {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center; /* Horizontally center the container */
+  align-items: center; /* Vertically center the container */
+  height: 100vh;
+  background-image: url('../../assets/images/2.webp'); /* Replace 'background-image.jpg' with your image path */
+  background-size: cover;
+  background-position: center;
+}
+
+.container {
+  background-color: rgba(144, 224, 239, 0.1); /* Semi-transparent white */
+  padding: 40px; /* Increase padding to 40px */
+  border-radius: 16px; /* Increase border radius to 16px */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Increase box shadow */
+  width: 400px; /* Increase the width to 400px */
+  text-align: center; /* Center all text inside the container */
+  backdrop-filter: blur(10px); /* Increase blur effect */
+}
+
+.company-name {
+  font-size: 32px; /* Increase font size to 32px */
+  color: #03045e; /* Dark blue */
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 20px; /* Increase font size to 20px */
+  text-align: center;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: calc(100% - 20px); /* Adjust width to 100% minus padding */
+  padding: 14px; /* Increase padding to 14px */
+  margin: 12px 0; /* Increase margin */
+  border: 2px solid rgba(2, 62, 138, 0.5); /* Increase border width and adjust color */
+  border-radius: 8px; /* Increase border radius */
+  box-sizing: border-box;
+  backdrop-filter: blur(5px); /* Apply blur effect to input fields */
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+  outline: none; /* Remove outline on focus */
+  border-color: #023e8a; /* Dark blue */
+}
+
+input[type="submit"] {
+  background-color: #0077B6; /* Medium blue */
+  color: white;
+  padding: 14px 24px; /* Increase padding */
+  border: none;
+  border-radius: 8px; /* Increase border radius */
+  cursor: pointer;
+  width: 100%;
+}
+
+input[type="submit"]:hover {
+  background-color: #0077b6; /* Dark blue */
+}
+
+.extra-links {
+  margin-top: 10px; /* Add some space between the form and the links */
+}
+
+.extra-links a {
+  color: #023e8a; /* Dark blue */
+  text-decoration: none;
+}
+
+.extra-links a:hover {
+  text-decoration: underline; /* Underline the link on hover */
+}

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Profile</title>
+</head>
+<body>
+<div class="container">
+  <div class="navigation-page">
+    <h2>Navigation</h2>
+    <button class="nav-btn" onclick="goToNewsPage()">
+      <i class="fas fa-newspaper"></i> News
+    </button>
+    <button class="nav-btn" onclick="goToFriendsPage()">
+      <i class="fas fa-users"></i> Friends
+    </button>
+    <button class="nav-btn" onclick="goToNotificationsPage()">
+      <i class="fas fa-bell"></i> Notifications
+    </button>
+    <button class="nav-btn" onclick="goToPhotosPage()">
+      <i class="fas fa-camera"></i> Photos
+    </button>
+  </div>
+  <main class="profile">
+    <!-- Profile content -->
+    <div class="about">
+      <div class="profile-header">
+        <div class="profile-img">
+          <img src="placeholder.jpg" alt="profile-img">
+          <div class="user-status"></div>
+        </div>
+        <div class="profile-info">
+          <h3 class="user-name">{{ nickname_id }}</h3>
+          <div class="user-info">
+            <p class="user-profession">{{ full_name }}</p>
+            <span class="user-id">{{ birth_date }}</span>
+          </div>
+        </div>
+      </div>
+      <div class="stats">
+        <div class="followers">
+          <h2 class="stats-data">followers</h2>
+          <span class="stats-text">134K</span>
+        </div>
+        <div class="following">
+          <h2 class="stats-data">following</h2>
+          <span class="stats-text">120</span>
+        </div>
+        <div class="affection">
+          <h2 class="stats-data">affection</h2>
+          <span class="stats-text">200 likes</span>
+        </div>
+      </div>
+      <hr class="hr-line">
+      <div class="user-about">
+        <p class="user-about-text">{{ about }}</p>
+      </div>
+    </div>
+  </main>
+  <!-- Buttons for profile operations -->
+  <div class="right-nav">
+    <ul>
+      <li>
+        <button class="nav-btn" onclick="editProfile()">
+          <i class="fas fa-edit"></i> Edit
+        </button>
+      </li>
+      <li>
+        <button class="nav-btn" onclick="saveProfile()">
+          <i class="fas fa-save"></i> Save
+        </button>
+      </li>
+      <li>
+        <button class="nav-btn" onclick="deleteAccount()">
+          <i class="fas fa-trash-alt"></i> Delete Account
+        </button>
+      </li>
+      <li>
+        <button class="nav-btn" onclick="logout()">
+          <i class="fas fa-sign-out-alt"></i> Logout
+        </button>
+      </li>
+    </ul>
+  </div>
+</div>
+<footer>
+  <p>CREATORS: ALUA SMANOVA | KUANYSHBEK ULPAN | ZHUMAGALI BOTA</p>
+</footer>
+<script src="https://kit.fontawesome.com/f7a61fa437.js" crossorigin="anonymous"></script>
+</body>
+</html>

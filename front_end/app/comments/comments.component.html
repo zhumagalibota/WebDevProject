@@ -1,0 +1,25 @@
+<div class="comments-container">
+  <h1>Comments</h1>
+
+  <!-- Display existing comments -->
+  <ul id="comments-list" class="comments-list">
+    <li *ngFor="let comment of comments">
+      <div class="comment-main-level">
+        <div class="comment-avatar"><img src="{{ comment.avatarUrl }}" alt=""></div>
+        <div class="comment-box">
+          <div class="comment-head">
+            <h6 class="comment-name">{{ comment.author }}</h6>
+            <span>{{ comment.timestamp }}</span>
+          </div>
+          <div class="comment-content">{{ comment.content }}</div>
+        </div>
+      </div>
+    </li>
+  </ul>
+
+  <!-- Form to add new comment -->
+  <div class="add-comment">
+    <textarea [(ngModel)]="newCommentContent" placeholder="Write a comment..."></textarea>
+    <button (click)="submitComment()">Submit</button>
+  </div>
+</div>

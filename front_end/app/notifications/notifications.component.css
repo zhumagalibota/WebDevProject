@@ -1,0 +1,110 @@
+/* global styles.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: 700;
+  line-height: 1.6;
+  background-image: linear-gradient(to left bottom, #9bcaf8, #9ac7f1);
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 95vh;
+  color: #000;
+}
+
+.container {
+  max-width: 105rem;
+  margin: 8rem auto;
+  background-color: #fff;
+  box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.3);
+  display: flex;
+}
+
+/* Navigation styles */
+.navigation-page {
+  width: 200px;
+  padding: 1rem;
+  border-right: 1px solid #ccc;
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  overflow-y: auto;
+}
+
+.navigation-page h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.nav-btn {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #000;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: flex;
+  align-items: center;
+}
+
+.nav-btn:hover {
+  background-color: #3c5d84;
+}
+
+/* Main content styles */
+.main-content {
+  margin-left: auto; /* Move main content to the left */
+  flex: 1; /* Occupy remaining space */
+}
+
+.notifications-list {
+  padding: 20px;
+}
+
+.notification {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.notification-avatar img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.notification-info {
+  display: flex;
+  align-items: center;
+}
+
+.notification-content {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.notification-timestamp {
+  color: #999;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+}

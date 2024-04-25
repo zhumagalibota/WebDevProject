@@ -1,0 +1,40 @@
+<div class="container">
+  <!-- Navigation Section -->
+  <div class="navigation-page">
+    <h2>Navigation</h2>
+    <button class="nav-btn" (click)="goToUserPage()">
+      <i class="fas fa-user"></i> User
+    </button>
+    <button class="nav-btn" (click)="goToFriendsPage()">
+      <i class="fas fa-users"></i> Friends
+    </button>
+    <button class="nav-btn" (click)="goToNewsPage()">
+      <i class="fas fa-newspaper"></i> News
+    </button>
+    <button class="nav-btn" (click)="goToPhotosPage()">
+      <i class="fas fa-camera"></i> Photos
+    </button>
+  </div>
+  <!-- Main content -->
+  <div class="main-content">
+    <h2>Notifications</h2>
+    <div class="notifications-list">
+      <h3>Recent Notifications</h3>
+      <div *ngFor="let notification of notifications" class="notification">
+        <div class="notification-info">
+          <div class="notification-avatar">
+            <img [src]="notification.avatarUrl || 'assets/default-avatar.png'" alt="User Avatar">
+          </div>
+          <div>
+            <span class="notification-content">{{ notification.content }}</span>
+            <span class="notification-timestamp">{{ notification.timestamp }}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<footer>
+  <p>CREATORS: ALUA SMANOVA | KUANYSHBEK ULPAN | ZHUMAGALI BOTA</p>
+</footer>
+<script src="https://kit.fontawesome.com/f7a61fa437.js" crossorigin="anonymous"></script>

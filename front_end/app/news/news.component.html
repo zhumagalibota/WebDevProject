@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Profile</title>
+</head>
+<body>
+<div class="container">
+  <!-- Navigation Section -->
+  <div class="navigation-page">
+    <h2>Navigation</h2>
+    <button class="nav-btn" (click)="goToUserPage()">
+      <i class="fas fa-user"></i> User
+    </button>
+    <button class="nav-btn" (click)="goToFriendsPage()">
+      <i class="fas fa-users"></i> Friends
+    </button>
+    <button class="nav-btn" (click)="goToNotificationsPage()">
+      <i class="fas fa-bell"></i> Notifications
+    </button>
+    <button class="nav-btn" (click)="goToPhotosPage()">
+      <i class="fas fa-camera"></i> Photos
+    </button>
+  </div>
+  <!-- News Feed Section -->
+  <div class="news-feed">
+    <h2>News</h2>
+    <div class="post-container">
+      <!-- Loop through news feed items -->
+      <div *ngFor="let post of newsFeed" class="post">
+        <div class="post-header">
+          <img [src]="post.author.avatarUrl || 'assets/default-avatar.png'" alt="Author Avatar">
+          <span class="author-name">{{ post.author.name }}</span>
+        </div>
+        <div class="post-content">
+          <p>{{ post.content }}</p>
+          <div class="post-interactions">
+            <button class="heart-icon" [class.active]="post.liked" (click)="likePost(post)">
+              <i class="fas fa-heart"></i> {{ post.likes }}
+            </button>
+            <button class="comment-icon" (click)="goToCommentsPage(post.id)">
+              <i class="fas fa-comment"></i> Comments
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<footer>
+  <p>CREATORS: ALUA SMANOVA | KUANYSHBEK ULPAN | ZHUMAGALI BOTA</p>
+</footer>
+<script src="https://kit.fontawesome.com/f7a61fa437.js" crossorigin="anonymous"></script>
+</body>
+</html>

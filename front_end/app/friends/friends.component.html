@@ -1,0 +1,67 @@
+<div class="container">
+  <!-- Navigation Section -->
+  <div class="navigation-page">
+    <h2>Navigation</h2>
+    <button class="nav-btn" (click)="goToUserPage()">
+      <i class="fas fa-user"></i> User
+    </button>
+    <button class="nav-btn" (click)="goToFriendsPage()">
+      <i class="fas fa-users"></i> Friends
+    </button>
+    <button class="nav-btn" (click)="goToNotificationsPage()">
+      <i class="fas fa-bell"></i> Notifications
+    </button>
+    <button class="nav-btn" (click)="goToPhotosPage()">
+      <i class="fas fa-camera"></i> Photos
+    </button>
+  </div>
+  <!-- Main content -->
+  <div class="main-content">
+    <h2>Friends</h2>
+    <div class="friends-list">
+      <h3>Search Members</h3>
+      <div class="search-container">
+        <input type="text" placeholder="Search members...">
+        <button class="search-btn"><i class="fas fa-search"></i></button>
+      </div>
+      <hr>
+      <div class="friend-proposals">
+        <h3>Friend Proposals</h3>
+        <div *ngFor="let proposal of proposals" class="friend-proposal">
+          <div class="friend-info">
+            <div class="friend-avatar">
+              <img [src]="proposal.avatarUrl || 'assets/default-avatar.png'" alt="Friend Avatar">
+            </div>
+            <div>
+              <span class="friend-name">{{ proposal.name }}</span>
+              <div class="friend-actions">
+                <button class="proposal-btn" (click)="sendFriendProposal(proposal)">Proposal</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr>
+      </div>
+      <h3>Friends ({{ friendsCount }})</h3>
+      <div *ngFor="let friend of friends" class="friend">
+        <div class="friend-info">
+          <div class="friend-avatar">
+            <img [src]="friend.avatarUrl || 'assets/default-avatar.png'" alt="Friend Avatar">
+          </div>
+          <div>
+            <span class="friend-name">{{ friend.name }}</span>
+            <div class="friend-actions">
+              <button *ngIf="friend.isPending && !isFriend(friend)" class="accept-btn" (click)="acceptFriendRequest(friend)">Accept</button>
+              <button *ngIf="friend.isPending && !isFriend(friend)" class="reject-btn" (click)="rejectFriendRequest(friend)">Reject</button>
+              <button *ngIf="isFriend(friend)" class="delete-btn" (click)="deleteFriend(friend)">Delete</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<footer>
+  <p>CREATORS: ALUA SMANOVA | KUANYSHBEK ULPAN | ZHUMAGALI BOTA</p>
+</footer>
+<script src="https://kit.fontawesome.com/f7a61fa437.js" crossorigin="anonymous"></script>
